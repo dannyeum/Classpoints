@@ -353,6 +353,15 @@ export default function App() {
             <motion.div
               key={student.id}
               layout
+              // 🚀 이 transition 부분을 추가하세요!
+              transition={{ 
+                layout: { 
+                  type: "spring", 
+                  stiffness: 50, 
+                  damping: 20,
+                  delay: 1.8 // 1.8초 기다렸다가 움직이게 설정 (원하는 만큼 숫자 조절 가능)
+                } 
+              }}
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
