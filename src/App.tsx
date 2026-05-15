@@ -121,7 +121,7 @@ export default function App() {
   // Sorted students for ranking
   const sortedStudents = useMemo(() => {
     return [...students].sort((a, b) => b.points - a.points || a.name.localeCompare(b.name));
-  }, []);
+  }, [students]);
 
   // Add Student
   const addStudent = (e: React.FormEvent) => {
