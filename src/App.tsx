@@ -359,7 +359,7 @@ export default function App() {
                   type: "spring", 
                   stiffness: 50, 
                   damping: 20,
-                  delay: 2.5 // 2.5초 기다렸다가 움직이게 설정 (원하는 만큼 숫자 조절 가능)
+                  delay: 4.5 // 4.5초 기다렸다가 움직이게 설정 (원하는 만큼 숫자 조절 가능)
                 } 
               }}
               initial={{ scale: 0.8, opacity: 0 }}
